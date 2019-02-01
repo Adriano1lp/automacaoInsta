@@ -12,7 +12,6 @@ class Resultadopesquisa
             if x > 8
                 Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
                 if valor >= 2
-                    
                     Appium::TouchAction.new.press({x: 523, y: 1740}).move_to({x: 19, y: -60}).release.perform
                 end
                 
@@ -25,11 +24,6 @@ class Resultadopesquisa
     end
 
     def pulo()
-        Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
-        Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
-        Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
-        Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
-        Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
         Appium::TouchAction.new.press({x: 523, y: 1790}).move_to({x: 50, y: -1495}).release.perform
     end
 end
