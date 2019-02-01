@@ -10,8 +10,8 @@ Funcionalidade: Automatizar funções do instagram
         Quando eu estiver na tela principal 
         E clicar na lupa
         E clicar em pesquisar
-        E digitar a pagina "burguerking"
-        E encontrar a pagina "burguerkingbrazil"
+        E digitar a pagina "boladeneve"
+        E encontrar a pagina "boladeneveoficial"
         E clicar na pagina 
         E clicar no botão seguidores
         Então seguirei 100 seguidores      

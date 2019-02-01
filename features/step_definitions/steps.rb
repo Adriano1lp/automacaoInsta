@@ -34,8 +34,10 @@ Dado("que eu esteja na tela de login") do
   Quando("clicar no botão seguidores") do
     seguidores.btnseguidoresclk
   end
-  
+
   Então("seguirei {int} seguidores") do |quantidade|
+    sleep(5)
+    seguidores.pulo()
     seguidores.btnseguirclk(quantidade)
   end
   
