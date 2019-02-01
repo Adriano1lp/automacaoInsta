@@ -13,7 +13,7 @@ require_relative 'page_helper.rb'
 World(PageObjects)
 def caps
     {caps: {
-        deviceName: "e3fb68a1",
+        deviceName: "9885e6514553455142",
         platformName: "Android",
         appPackage: "com.instagram.android",
         appActivity: "com.instagram.mainactivity.MainActivity",

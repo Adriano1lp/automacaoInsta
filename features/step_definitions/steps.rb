@@ -32,9 +32,11 @@ Dado("que eu esteja na tela de login") do
   end
   
   Quando("clicar no botão seguidores") do
-    pending # Write code here that turns the phrase above into concrete actions
+    seguidores.btnseguidoresclk
   end
   
-  Então("seguirei uma {string} definida de seguidores") do |string|
-    pending # Write code here that turns the phrase above into concrete actions
+  Então("seguirei {int} seguidores") do |quantidade|
+    seguidores.btnseguirclk(quantidade)
   end
+  
+ 

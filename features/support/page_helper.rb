@@ -7,4 +7,10 @@ module PageObjects
     def home
         @inicio ||= Home.new
     end
+
+    def seguidores
+        @click ||= Resultadopesquisa.new
+    end
+
+    
 end

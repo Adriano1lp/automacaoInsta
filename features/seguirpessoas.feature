@@ -14,4 +14,4 @@ Funcionalidade: Automatizar funções do instagram
         E encontrar a pagina "burguerkingbrazil"
         E clicar na pagina 
         E clicar no botão seguidores
-        Então seguirei uma "quantidade" definida de seguidores      
+        Então seguirei 100 seguidores      
