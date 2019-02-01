@@ -13,12 +13,13 @@ require_relative 'page_helper.rb'
 World(PageObjects)
 def caps
     {caps: {
-        deviceName: "9885e6514553455142",
+        deviceName: "e3fb68a1",
         platformName: "Android",
         appPackage: "com.instagram.android",
         appActivity: "com.instagram.mainactivity.MainActivity",
-        newCommandTimeout:"6600",
+        newCommandTimeout: "6600",
         automationName: "UiAutomator2"
+       
         }}
 end
 

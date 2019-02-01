@@ -1,31 +1,37 @@
 class Home
-   def btnpesquisaclk
-        $appium_driver.find_element(:xpath, "//android.widget.FrameLayout[@content-desc=\"Pesquisar e explorar\"]/android.widget.ImageView").click
-   end
-   def findbtnpesquisa
-    $appium_driver.find_element(:xpath, "//android.widget.FrameLayout[@content-desc=\"Pesquisar e explorar\"]/android.widget.ImageView")
-   end
+     def findbtnpesquisa()
+          $appium_driver.find_element(:xpath, "//android.widget.FrameLayout[@content-desc=\"Pesquisar e explorar\"]/android.widget.ImageView")
+     end
 
-
-   def txtpesquisa
-        $appium_driver.find_element(:xpath, "//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText")
-   end
+     def btnpesquisaclk()
+          #binding.pry
+         
+        btPesquisa = findbtnpesquisa()
+        btPesquisa.click
+     end
+ 
+     def txtpesquisa()
+          binding.pry
+        $appium_driver.find_element(:xpath, "//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText").click
+     end
    
-   def txtpesquisaclk
-        Appium::TouchAction.new.tap(x: 207, y: 119, count:1).perform
-   end
+     def permissaoclk()
+          
+          $appium_driver.find_element(id: "com.android.packageinstaller:id/permission_allow_button").click
+     end
 
-   def inserepesquisa(pesquisa)
-     $appium_driver.find_element(:xpath, "//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText")
-   end
+     def inserepesquisa(pesquisa)
+          
+          $appium_driver.find_element(:xpath, "//hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout[2]/android.widget.FrameLayout[1]/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.EditText").send_keys(pesquisa)     
+     end
 
-   def resultadoclk(result)
-        @encontrado = $appium_driver.find_element(:xpath,  "//text[@value=#{result}]")
+     def resultado(result)
+          
+        @encontrado = find(result)
+     end
 
-   end
-
-   def resultado
+     def resultadoclk()
         @encontrado.click
-   end
+     end
 
 end
